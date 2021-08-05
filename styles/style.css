@@ -34,6 +34,7 @@ body{
 }
 /* CSS style for palyer section */
 .container{
+    background-color: honeydew;
     margin-top: 70px;
     display: flex;
     justify-content: center;
