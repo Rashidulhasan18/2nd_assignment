@@ -34,6 +34,10 @@ main{
     margin-top: 130px;
     margin-left: 150px;
 }
+.image-transition:hover .image-transform{
+    transform: rotate(60deg);
+    transition: 2s;
+}
 /* CSS style for palyer section */
 .container{
     margin-top: 70px;
@@ -120,4 +124,71 @@ main{
 }
 .footer p{
     font-weight: 500;
+}
+/* ---------------
+    Media Queries
+   --------------- */
+
+/* Mobile device */
+@media (max-width:688px) {
+    .header{
+        flex-direction: column;
+        height: 800px;
+    }
+    .heading-title{
+        margin-top: -10px;
+        margin-left: 30px;
+    }
+    .watch-live-button{
+        margin-left: -115px;
+    }
+    .image-transition{
+        margin-top: -20px;
+        margin-left: -85px;
+        width: 90%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 330px);
+        grid-row-gap: 30px;
+    }
+    .email-subscription{
+        width: 80%;
+    }
+    .footer .logo img{
+        width: 200px; 
+        margin-top: -50px;       
+    }
+}
+/* Tablet device */
+@media (min-width:688px) and (max-width:992px) {
+    .header{
+        width: 100%;
+        flex-direction: column;
+        height: 800px;
+        align-items: center;
+    }
+
+    .heading-title{
+        margin-top: -10px;
+        margin-left: 30px;
+    }
+    .watch-live-button{
+        margin-left: -115px;
+    }
+    .image-transition{
+        margin-top: -20px;
+        margin-left: -85px;
+        width: 80%;
+    }
+    .players{
+        grid-template-columns: repeat(2, 330px);
+        grid-row-gap: 30px;
+    }
+    .email-subscription{
+        width: 80%;
+    }
+    .footer .logo img{
+        width: 200px; 
+        margin-top: -50px;       
+    }
 }
